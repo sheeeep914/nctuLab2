@@ -19,9 +19,12 @@ In this lab, we are going to write a Python program which can generate a network
 > TODO: 
 > * Describe how to execute your program
 >	1. Open my terminal and login in my container using SSH.
->	2. Change the recent directory into /Network_Topology/src/		(cd /root/Network_Topology/src/)
->	3. Change to the executable mode of topology.py		(chmod +x topology.py)
->	4. Run topology.py		(./topology.py)
+>	2. Change the recent directory into /Network_Topology/src/
+		`cd /root/Network_Topology/src/`
+>	3. Change to the executable mode of topology.py	
+		`chmod +x topology.py`
+>	4. Run topology.py		
+		`./topology.py`
 > * Show the screenshot of using iPerf command in Mininet
 	![iPerf command](iPerf_Command.png)
 
@@ -44,8 +47,13 @@ In this lab, we are going to write a Python program which can generate a network
 > * Describe how you finish this work step-by-step in detail
 
 1. **Environment Setup**
-	
-
+	1. Join the lab on GitHub Classroom and get the initial repository. [https://github.com/nctucn](https://github.com/nctucn)
+	2. Login to my container using SSH. (I'm using Mac)
+		`ssh root@140.113.195.69 -p 16328`	
+		`Password: cn2018`
+	3. Clone my GitHub repository.
+		`git clone https://github.com/nctucn/lab2-sheeeep914.git Network_Topology`
+	4. After cloning, there will be a folder **"Network_Topology"** in my container.
 2. **Example of Mininet**
 
 
