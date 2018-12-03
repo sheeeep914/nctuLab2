@@ -18,12 +18,12 @@ In this lab, we are going to write a Python program which can generate a network
 
 > TODO: 
 > * Describe how to execute your program
-	1. Open my terminal and login in my container using SSH.
-	2. Change the recent directory into /Network_Topology/src/	(cd /root/Network_Topology/src/)
-	3. Change to the executable mode of topology.py	(chmod +x topology.py)
-	4. Run topology.py	(./topology.py)
+>	1. Open my terminal and login in my container using SSH.
+>	2. Change the recent directory into /Network_Topology/src/		(cd /root/Network_Topology/src/)
+>	3. Change to the executable mode of topology.py		(chmod +x topology.py)
+>	4. Run topology.py		(./topology.py)
 > * Show the screenshot of using iPerf command in Mininet
-	!iPerf command(iPerf_Command.png)
+	![iPerf command](iPerf_Command.png)
 
 ---
 ## Description
@@ -44,7 +44,7 @@ In this lab, we are going to write a Python program which can generate a network
 > * Describe how you finish this work step-by-step in detail
 
 1. **Environment Setup**
-
+	
 
 2. **Example of Mininet**
 
