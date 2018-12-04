@@ -31,7 +31,7 @@ In this lab, we are going to write a Python program which can generate a network
 ### Mininet API in Python
 
 > TODO:
-> * Describe the meaning of Mininet API in Python you used in detail
+> * Describe the meaning of Mininet API in Python you used in detail  
 	1. You need to include several modules from mininet, each of them have different contribution on building  topology.  
 
 	#Network emulation with hosts spawned in network namespaces. 
