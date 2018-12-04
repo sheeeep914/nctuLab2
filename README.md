@@ -18,13 +18,13 @@ In this lab, we are going to write a Python program which can generate a network
 
 > TODO: 
 > * Describe how to execute your program
-	1. Open my terminal and login in my container using SSH.
-	2. Change the recent directory into /Network_Topology/src/
-	`cd /root/Network_Topology/src/`
-	3. Change to the executable mode of topology.py	
-	`chmod +x topology.py`
-	4. Run topology.py		
-	`./topology.py`
+	1. Open my terminal and login in my container using SSH.  
+	2. Change the recent directory into /Network_Topology/src/  
+	`cd /root/Network_Topology/src/`  
+	3. Change to the executable mode of topology.py  
+	`chmod +x topology.py`  
+	4. Run topology.py  		
+	`./topology.py`  
 > * Show the screenshot of using iPerf command in Mininet
 	![iPerf command](iPerf_Command.png)
 
@@ -35,7 +35,7 @@ In this lab, we are going to write a Python program which can generate a network
 
 > TODO:
 > * Describe the meaning of Mininet API in Python you used in detail
-	**Ans:** You need to include several modules from mininet, each of them have different contribution on building topology.
+	**Ans:** You need to include several modules from mininet, each of them have different contribution on building  topology.  
 	```
 	#Network emulation with hosts spawned in network namespaces. 
 	from mininet.net import Mininet
@@ -57,7 +57,7 @@ In this lab, we are going to write a Python program which can generate a network
 	
 	#Simple command-line interface to talk to nodes
 	from mininet.cli import CLI
-	```
+	
 
 ### iPerf Commands
 
@@ -90,10 +90,10 @@ In this lab, we are going to write a Python program which can generate a network
 	3. Clone my GitHub repository.
 	`git clone https://github.com/nctucn/lab2-sheeeep914.git Network_Topology`
 	4. After cloning, there will be a folder **"Network_Topology"** in my container.
-	5. Run Mininet for testing
+	5. Run Mininet for testing.    
 	`sudo mn`
 2. **Example of Mininet**
-	1. Run example.py
+	1. Run example.py  
 	```
 	#Change the directory into /Network_Topology/src/
 	cd /root/Network_Topology/src/
@@ -104,40 +104,40 @@ In this lab, we are going to write a Python program which can generate a network
 	# Run example code (example.py)
 	./example.py
 	```
-	2. Result after running example.py
+	2. Result after running example.py  
 	![](Excuting_example.png)
 	
 
 3. **Topology Generator**
-	1. View the topology picture I'm going to generate (topo2.png)
-	2. Write a python program (topology.py) to generate a network topology for Mininet
-		- define a function build in the class MyTopo 	
+	1. View the topology picture I'm going to generate (topo2.png)  
+	2. Write a python program (topology.py) to generate a network topology for Mininet  
+		- define a function build in the class MyTopo   	
 		`def build(self):`
-		- Create hosts and switches	
+		- Create hosts and switches  	
 		`.addSwitch()	.addHost()`
-		- Construct links	
+		- Construct links  	
 		`.addLink(switch/host, switch/host, bd, delay, loss)`
-		- Create and test a custom network	
+		- Create and test a custom network  	
 		`def simpleTest()`
 
 4. **Measurement**
-	1. Using **iPerf commands** to measure the topology
-	(these commands below will dump the result of iPerf’s measurement into the file **result**	/Network_Topology/src/out/result)
+	1. Using **iPerf commands** to measure the topology  
+	(these commands below will dump the result of iPerf’s measurement into the file **result**	/Network_Topology/src/out/result)  
 	```
 	h1 iperf -s -u -i 1 > ./out/result &
 	h7 iperf -c 10.0.0.1 -u –i 1
 	```
-	2. The expected result from my topology.py
+	2. The expected result from my topology.py  
 	![iPerf command](iPerf_Command.png)
 ---
 ## References
 
 > TODO: 
-> * Please add your references in the following
+> * Please add your references in the following  
 	**Ans:**
-	* [Mininet Python API Reference Manual](http://mininet.org/api/annotated.html)
-	* [GitHub/OSE-Lab - 熟悉如何使用 Mininet](https://github.com/OSE-Lab/Learning-SDN/blob/master/Mininet/README.md)
-	* [iPerf Command](https://cms.35g.tw/coding/%E5%88%A9%E7%94%A8-iperf-%E6%B8%AC%E8%A9%A6%E7%B6%B2%E8%B7%AF%E6%95%88%E8%83%BD/)
+	* [Mininet Python API Reference Manual](http://mininet.org/api/annotated.html)  
+	* [GitHub/OSE-Lab - 熟悉如何使用 Mininet](https://github.com/OSE-Lab/Learning-SDN/blob/master/Mininet/README.md)  
+	* [iPerf Command](https://cms.35g.tw/coding/%E5%88%A9%E7%94%A8-iperf-%E6%B8%AC%E8%A9%A6%E7%B6%B2%E8%B7%AF%E6%95%88%E8%83%BD/)  
 
 * **Mininet**
     * [Mininet Walkthrough](http://mininet.org/walkthrough/)
