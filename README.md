@@ -17,8 +17,8 @@ In this lab, we are going to write a Python program which can generate a network
 ## Execution
 
 > TODO: 
-> * Describe how to execute your program
-	1. Open my terminal and login in my container using SSH.     
+> * Describe how to execute your program  
+	1. Open my terminal and login in my container using SSH.       
 	2. Change the recent directory into /Network_Topology/src/   
 	`cd /root/Network_Topology/src/`    
 	3. Change to the executable mode of topology.py   
@@ -35,7 +35,7 @@ In this lab, we are going to write a Python program which can generate a network
 
 > TODO:
 > * Describe the meaning of Mininet API in Python you used in detail  
-	1. You need to include several modules from mininet, each of them have different contribution on building  topology.  
+	- You need to include several modules from mininet, each of them have different contribution on building  topology.  
 
 	#Network emulation with hosts spawned in network namespaces. 
 	from mininet.net import Mininet
