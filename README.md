@@ -63,12 +63,12 @@ In this lab, we are going to write a Python program which can generate a network
 
 > TODO:
 > * Describe the meaning of iPerf command you used in detail  
-	`h1 iperf -s -u -i 1 > ./out/result &`    
+	- `h1 iperf -s -u -i 1 > ./out/result &`    
 		1. -s, --server             run in server mode  
 		2. -u, --udp                use UDP rather than TCP  
 		3. -i, --interval  #        seconds between periodic bandwidth reports  
-		(-i 1: display the data every one seconds)
-	`h7 iperf -c 10.0.0.1 -u –i 1`      
+		(-i 1: display the data every one seconds)  
+	- `h7 iperf -c 10.0.0.1 -u –i 1`      
 		1. -c, --client    <host>   run in client mode, connecting to <host>  
 		(10.0.0.1 : the ip of server)  
 		2. -u, --udp                use UDP rather than TCP  
