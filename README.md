@@ -18,13 +18,13 @@ In this lab, we are going to write a Python program which can generate a network
 
 > TODO: 
 > * Describe how to execute your program
->	1. Open my terminal and login in my container using SSH.
->	2. Change the recent directory into /Network_Topology/src/
-		`cd /root/Network_Topology/src/`
->	3. Change to the executable mode of topology.py	
-		`chmod +x topology.py`
->	4. Run topology.py		
-		`./topology.py`
+	1. Open my terminal and login in my container using SSH.
+	2. Change the recent directory into /Network_Topology/src/
+	`cd /root/Network_Topology/src/`
+	3. Change to the executable mode of topology.py	
+	`chmod +x topology.py`
+	4. Run topology.py		
+	`./topology.py`
 > * Show the screenshot of using iPerf command in Mininet
 	![iPerf command](/screenshot/iPerf_Command.png)
 
@@ -48,15 +48,15 @@ In this lab, we are going to write a Python program which can generate a network
 
 1. **Environment Setup**
 	1. Join the lab on GitHub Classroom and get the initial repository. 
->		([https://github.com/nctucn](https://github.com/nctucn))
+		([https://github.com/nctucn](https://github.com/nctucn))
 	2. Login to my container using SSH. (I'm using Mac)
->		`ssh root@140.113.195.69 -p 16328`	
->		`Password: cn2018`
+	`ssh root@140.113.195.69 -p 16328`	
+	`Password: cn2018`
 	3. Clone my GitHub repository.
->		`git clone https://github.com/nctucn/lab2-sheeeep914.git Network_Topology`
+	`git clone https://github.com/nctucn/lab2-sheeeep914.git Network_Topology`
 	4. After cloning, there will be a folder **"Network_Topology"** in my container.
 	5. Run Mininet for testing
->		`sudo mn`
+	`sudo mn`
 2. **Example of Mininet**
 	1. Run example.py
 	```
@@ -74,10 +74,14 @@ In this lab, we are going to write a Python program which can generate a network
 3. **Topology Generator**
 	1. View the topology picture I'm going to generate (topo2.png)
 	2. Write a python program (topology.py) to generate a network topology for Mininet
-		- define a function build in the class MyTopo 	`def build(self):`
-		- Create hosts and switches	`.addSwitch()	.addHost()`
-		- Construct links	`.addLink(switch/host, switch/host, bd, delay, loss)`
-		- Create and test a custom network	`def simpleTest()`
+		- define a function build in the class MyTopo 	
+		`def build(self):`
+		- Create hosts and switches	
+		`.addSwitch()	.addHost()`
+		- Construct links	
+		`.addLink(switch/host, switch/host, bd, delay, loss)`
+		- Create and test a custom network	
+		`def simpleTest()`
 
 4. **Measurement**
 	1. Using **iPerf commands** to measure the topology
