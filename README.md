@@ -26,7 +26,7 @@ In this lab, we are going to write a Python program which can generate a network
 	4. Run topology.py		
 	`./topology.py`
 > * Show the screenshot of using iPerf command in Mininet
-	![iPerf command](/screenshot/iPerf_Command.png)
+	![iPerf command](iPerf_Command.png)
 
 ---
 ## Description
@@ -105,7 +105,7 @@ In this lab, we are going to write a Python program which can generate a network
 	./example.py
 	```
 	2. Result after running example.py
-	![](screenshot/Excuting_example.png)
+	![](Excuting_example.png)
 	
 
 3. **Topology Generator**
@@ -128,7 +128,7 @@ In this lab, we are going to write a Python program which can generate a network
 	h7 iperf -c 10.0.0.1 -u –i 1
 	```
 	2. The expected result from my topology.py
-	![iPerf command](/screenshot/iPerf_Command.png)
+	![iPerf command](iPerf_Command.png)
 ---
 ## References
 
