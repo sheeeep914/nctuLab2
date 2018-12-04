@@ -61,12 +61,12 @@ In this lab, we are going to write a Python program which can generate a network
 > TODO:
 > * Describe the meaning of iPerf command you used in detail
 
-	- `h1 iperf -s -u -i 1 > ./out/result &`
+	- h1 iperf -s -u -i 1 > ./out/result &
 		1. -s, --server             run in server mode
 		2. -u, --udp                use UDP rather than TCP
 		3. -i, --interval  #        seconds between periodic bandwidth reports
 		(-i 1: display the data every one seconds)
-	- `h7 iperf -c 10.0.0.1 -u –i 1`
+	- h7 iperf -c 10.0.0.1 -u –i 1
 		1. -c, --client    <host>   run in client mode, connecting to <host>
 		(10.0.0.1 : the ip of server)
 		2. -u, --udp                use UDP rather than TCP
@@ -78,15 +78,15 @@ In this lab, we are going to write a Python program which can generate a network
 > * Describe how you finish this work step-by-step in detail
 
 1. **Environment Setup**
-	1. Join the lab on GitHub Classroom and get the initial repository. 
-		([https://github.com/nctucn](https://github.com/nctucn))
-	2. Login to my container using SSH. (I'm using Mac)
-	
-	`ssh root@140.113.195.69 -p 16328	
+	1. Join the lab on GitHub Classroom and get the initial repository. ([https://github.com/nctucn](https://github.com/nctucn))  
+	2. Login to my container using SSH. (I'm using Mac)  
+	`ssh root@140.113.195.69 -p 16328
 	 Password: cn2018`  
-	3. Clone my GitHub repository. `git clone https://github.com/nctucn/lab2-sheeeep914.git Network_Topology`  
-	4. After cloning, there will be a folder **"Network_Topology"** in my container.  
-	5. Run Mininet for testing. `sudo mn`  
+	3. Clone my GitHub repository.  
+	`git clone https://github.com/nctucn/lab2-sheeeep914.git Network_Topology`    
+	4. After cloning, there will be a folder **"Network_Topology"** in my container.   
+	5. Run Mininet for testing.  
+	`sudo mn`   
 2. **Example of Mininet**
 	1. Run example.py   
 	```
@@ -125,9 +125,6 @@ In this lab, we are going to write a Python program which can generate a network
 
 > TODO: 
 > * Please add your references in the following  
-	* [Mininet Python API Reference Manual](http://mininet.org/api/annotated.html)  
-	* [GitHub/OSE-Lab - 熟悉如何使用 Mininet](https://github.com/OSE-Lab/Learning-SDN/blob/master/Mininet/README.md)  
-	* [iPerf Command](https://cms.35g.tw/coding/%E5%88%A9%E7%94%A8-iperf-%E6%B8%AC%E8%A9%A6%E7%B6%B2%E8%B7%AF%E6%95%88%E8%83%BD/)  
 
 * **Mininet**
     * [Mininet Walkthrough](http://mininet.org/walkthrough/)
