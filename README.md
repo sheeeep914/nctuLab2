@@ -35,12 +35,47 @@ In this lab, we are going to write a Python program which can generate a network
 
 > TODO:
 > * Describe the meaning of Mininet API in Python you used in detail
+	**Ans:** You need to include several modules from mininet, each of them have different contribution on building topology.
+	```
+	#Network emulation with hosts spawned in network namespaces. 
+	from mininet.net import Mininet
+	
+	#Data center network representation for structured multi-trees.
+	from mininet.topo import Topo
+	
+	#Open vSwitch controller
+	from mininet.node import OVSController
+	
+	#Link with symmetric TC interfaces configured via opts
+	from mininet.link import TCLink
+	
+	#Dump every hosts’ and switches’ connections
+	from mininet.util import dumpNodeConnections
+	
+	#Set Mininet's default output level
+	from mininet.log import setLogLevel
+	
+	#Simple command-line interface to talk to nodes
+	from mininet.cli import CLI
+	```
 
 ### iPerf Commands
 
 > TODO:
 > * Describe the meaning of iPerf command you used in detail
-
+	
+	**Ans:**
+	- `h1 iperf -s -u -i 1 > ./out/result &`
+		1. -s, --server             run in server mode
+		2. -u, --udp                use UDP rather than TCP
+		3. -i, --interval  #        seconds between periodic bandwidth reports
+		(-i 1: display the data every one seconds)
+	- `h7 iperf -c 10.0.0.1 -u –i 1`
+		1. -c, --client    <host>   run in client mode, connecting to <host>
+		(10.0.0.1 : the ip of server)
+		2. -u, --udp                use UDP rather than TCP
+		3. -i, --interval  #        seconds between periodic bandwidth reports
+		(-i 1: display the data every one seconds)
 ### Tasks
 
 > TODO:
@@ -60,12 +95,14 @@ In this lab, we are going to write a Python program which can generate a network
 2. **Example of Mininet**
 	1. Run example.py
 	```
-		#Change the directory into /Network_Topology/src/
-		cd /root/Network_Topology/src/
-		# Change to the executable mode of example.py
-		chmod +x example.py
-		# Run example code (example.py)
-		./example.py
+	#Change the directory into /Network_Topology/src/
+	cd /root/Network_Topology/src/
+	
+	# Change to the executable mode of example.py
+	chmod +x example.py
+	
+	# Run example code (example.py)
+	./example.py
 	```
 	2. Result after running example.py
 	![](screenshot/Excuting_example.png)
@@ -85,14 +122,22 @@ In this lab, we are going to write a Python program which can generate a network
 
 4. **Measurement**
 	1. Using **iPerf commands** to measure the topology
+	(these commands below will dump the result of iPerf’s measurement into the file **result**	/Network_Topology/src/out/result)
 	```
-	
+	h1 iperf -s -u -i 1 > ./out/result &
+	h7 iperf -c 10.0.0.1 -u –i 1
 	```
+	2. The expected result from my topology.py
+	![iPerf command](/screenshot/iPerf_Command.png)
 ---
 ## References
 
 > TODO: 
 > * Please add your references in the following
+	**Ans:**
+	* [Mininet Python API Reference Manual](http://mininet.org/api/annotated.html)
+	* [GitHub/OSE-Lab - 熟悉如何使用 Mininet](https://github.com/OSE-Lab/Learning-SDN/blob/master/Mininet/README.md)
+	* [iPerf Command](https://cms.35g.tw/coding/%E5%88%A9%E7%94%A8-iperf-%E6%B8%AC%E8%A9%A6%E7%B6%B2%E8%B7%AF%E6%95%88%E8%83%BD/)
 
 * **Mininet**
     * [Mininet Walkthrough](http://mininet.org/walkthrough/)
@@ -119,7 +164,7 @@ In this lab, we are going to write a Python program which can generate a network
 > TODO:
 > * Please replace "YOUR_NAME" and "YOUR_GITHUB_LINK" into yours
 
-* [YOUR_NAME](YOUR_GITHUB_LINK)
+* [Yu-Hsin Yang](https://github.com/sheeeep914)
 * [David Lu](https://github.com/yungshenglu)
 
 ---
