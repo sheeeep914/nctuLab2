@@ -26,7 +26,7 @@ In this lab, we are going to write a Python program which can generate a network
 >	4. Run topology.py		
 		`./topology.py`
 > * Show the screenshot of using iPerf command in Mininet
-	![iPerf command](iPerf_Command.png)
+	![iPerf command](/screenshot/iPerf_Command.png)
 
 ---
 ## Description
@@ -47,21 +47,43 @@ In this lab, we are going to write a Python program which can generate a network
 > * Describe how you finish this work step-by-step in detail
 
 1. **Environment Setup**
-	1. Join the lab on GitHub Classroom and get the initial repository. [https://github.com/nctucn](https://github.com/nctucn)
+	1. Join the lab on GitHub Classroom and get the initial repository. 
+>		([https://github.com/nctucn](https://github.com/nctucn))
 	2. Login to my container using SSH. (I'm using Mac)
-		`ssh root@140.113.195.69 -p 16328`	
-		`Password: cn2018`
+>		`ssh root@140.113.195.69 -p 16328`	
+>		`Password: cn2018`
 	3. Clone my GitHub repository.
-		`git clone https://github.com/nctucn/lab2-sheeeep914.git Network_Topology`
+>		`git clone https://github.com/nctucn/lab2-sheeeep914.git Network_Topology`
 	4. After cloning, there will be a folder **"Network_Topology"** in my container.
+	5. Run Mininet for testing
+>		`sudo mn`
 2. **Example of Mininet**
-
+	1. Run example.py
+	```
+		#Change the directory into /Network_Topology/src/
+		cd /root/Network_Topology/src/
+		# Change to the executable mode of example.py
+		chmod +x example.py
+		# Run example code (example.py)
+		./example.py
+	```
+	2. Result after running example.py
+	![](screenshot/Excuting_example.png)
+	
 
 3. **Topology Generator**
-
+	1. View the topology picture I'm going to generate (topo2.png)
+	2. Write a python program (topology.py) to generate a network topology for Mininet
+		- define a function build in the class MyTopo 	`def build(self):`
+		- Create hosts and switches	`.addSwitch()	.addHost()`
+		- Construct links	`.addLink(switch/host, switch/host, bd, delay, loss)`
+		- Create and test a custom network	`def simpleTest()`
 
 4. **Measurement**
-
+	1. Using **iPerf commands** to measure the topology
+	```
+	
+	```
 ---
 ## References
 
