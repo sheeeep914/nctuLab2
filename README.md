@@ -18,12 +18,12 @@ In this lab, we are going to write a Python program which can generate a network
 
 > TODO: 
 > * Describe how to execute your program  
-	1. Open my terminal and login in my container using SSH.       
-	2. Change the recent directory into /Network_Topology/src/   
+	1.  Open my terminal and login in my container using SSH.       
+	2.  Change the recent directory into /Network_Topology/src/   
 	`cd /root/Network_Topology/src/`    
-	3. Change to the executable mode of topology.py   
+	3.  Change to the executable mode of topology.py   
 	`chmod +x topology.py`    
-	4. Run topology.py  
+	4.  Run topology.py  
 	`./topology.py`    
 > * Show the screenshot of using iPerf command in Mininet
 	![iPerf command](iPerf_Command.png)
@@ -35,7 +35,7 @@ In this lab, we are going to write a Python program which can generate a network
 
 > TODO:
 > * Describe the meaning of Mininet API in Python you used in detail  
-	- You need to include several modules from mininet, each of them have different contribution on building  topology.  
+	-  You need to include several modules from mininet, each of them have different contribution on building  topology.  
 
 	#Network emulation with hosts spawned in network namespaces. 
 	from mininet.net import Mininet
@@ -63,17 +63,16 @@ In this lab, we are going to write a Python program which can generate a network
 
 > TODO:
 > * Describe the meaning of iPerf command you used in detail  
-	`h1 iperf -s -u -i 1 > ./out/result &`   
-	1. -s, --server,  run in server mode  
-	2. -u, --udp,  use UDP rather than TCP  
-	3. -i, --interval  #,  seconds between periodic bandwidth reports  
-	(-i 1: display the data every one seconds)  
-	`h7 iperf -c 10.0.0.1 -u –i 1`      
-	1. -c, --client    <host>,  run in client mode, connecting to <host>    
-	(10.0.0.1 : the ip of server)   
-	2. -u, --udp,  use UDP rather than TCP    
-	3. -i, --interval  #,  seconds between periodic bandwidth reports    
-	(-i 1: display the data every one seconds)   
+
+	h1 iperf -s -u -i 1 > ./out/result &
+	h7 iperf -c 10.0.0.1 -u –i
+	
+|command|meaning|
+|---|---|   
+|-s, --server|run in server mode| 
+|-c, --client    <host>|run in client mode, connecting to <host>| 
+| -u, --udp         | use UDP rather than TCP | 
+| -i, --interval  # | seconds between periodic bandwidth reports (-i 1: display the data every one seconds) |
 	
 ### Tasks
 
@@ -81,17 +80,17 @@ In this lab, we are going to write a Python program which can generate a network
 > * Describe how you finish this work step-by-step in detail
 
 1. **Environment Setup**
-	1. Join the lab on GitHub Classroom and get the initial repository. ([https://github.com/nctucn](https://github.com/nctucn))  
-	2. Login to my container using SSH. (I'm using Mac)  
+	1.  Join the lab on GitHub Classroom and get the initial repository. ([https://github.com/nctucn](https://github.com/nctucn))  
+	2.  Login to my container using SSH. (I'm using Mac)  
 	`ssh root@140.113.195.69 -p 16328
 	 Password: cn2018`  
-	3. Clone my GitHub repository.  
+	3.  Clone my GitHub repository.  
 	`git clone https://github.com/nctucn/lab2-sheeeep914.git Network_Topology`    
-	4. After cloning, there will be a folder **"Network_Topology"** in my container.   
-	5. Run Mininet for testing.  
+	4.  After cloning, there will be a folder **"Network_Topology"** in my container.   
+	5.  Run Mininet for testing.  
 	`sudo mn`   
 2. **Example of Mininet**
-	1. Run example.py   
+	1.  Run example.py   
 	```
 	#Change the directory into /Network_Topology/src/
 	cd /root/Network_Topology/src/
@@ -107,21 +106,21 @@ In this lab, we are going to write a Python program which can generate a network
 	
 
 3. **Topology Generator**
-	1. View the topology picture I'm going to generate (topo2.png)    
-	2. Write a python program (topology.py) to generate a network topology for Mininet    
-		- define a function build in the class MyTopo `def build(self):`  
-		- Create hosts and switches `.addSwitch() .addHost()`  
-		- Construct links `.addLink(switch/host, switch/host, bd, delay, loss)`  
-		- Create and test a custom network `def simpleTest()`  
+	1.  View the topology picture I'm going to generate (topo2.png)    
+	2.  Write a python program (topology.py) to generate a network topology for Mininet    
+		-  define a function build in the class MyTopo `def build(self):`  
+		-  Create hosts and switches `.addSwitch() .addHost()`  
+		-  Construct links `.addLink(switch/host, switch/host, bd, delay, loss)`  
+		-  Create and test a custom network `def simpleTest()`  
 
 4. **Measurement**
-	1. Using **iPerf commands** to measure the topology
+	1.  Using **iPerf commands** to measure the topology
 	(these commands below will dump the result of iPerf’s measurement into the file **result**	/Network_Topology/src/out/result)    
 	```
 	h1 iperf -s -u -i 1 > ./out/result &
 	h7 iperf -c 10.0.0.1 -u –i 1
 	```
-	2. The expected result from my topology.py  
+	2.  The expected result from my topology.py  
 	![iPerf command](iPerf_Command.png)
 ---
 ## References
@@ -147,7 +146,7 @@ In this lab, we are going to write a Python program which can generate a network
     * [Cheat Sheet of Markdown Syntax](https://www.markdownguide.org/cheat-sheet)
     * [Vim Tutorial – Tutorialspoint](https://www.tutorialspoint.com/vim/index.htm)
     * [鳥哥的 Linux 私房菜 – 第九章、vim 程式編輯器](http://linux.vbird.org/linux_basic/0310vi.php)
-
+    * [Markdown介紹](https://bookdown.org/tpemartin/rmarkdown_intro/markdown-knitr.html#markdown-knitr)
 ---
 ## Contributors
 
