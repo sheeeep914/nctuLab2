@@ -108,10 +108,10 @@ In this lab, we are going to write a Python program which can generate a network
 3. **Topology Generator**
 	1.  View the topology picture I'm going to generate (topo2.png)    
 	2.  Write a python program (topology.py) to generate a network topology for Mininet    
-		-  define a function build in the class MyTopo `def build(self):`  
-		-  Create hosts and switches `.addSwitch() .addHost()`  
-		-  Construct links `.addLink(switch/host, switch/host, bd, delay, loss)`  
-		-  Create and test a custom network `def simpleTest()`  
+		1.  Define a function build in the class MyTopo `def build(self):`  
+		2.  Create hosts and switches `.addSwitch() .addHost()`  
+		3.  Construct links `.addLink(switch/host, switch/host, bd, delay, loss)`  
+		4.  Create and test a custom network `def simpleTest()`  
 
 4. **Measurement**
 	1.  Using **iPerf commands** to measure the topology
@@ -126,7 +126,10 @@ In this lab, we are going to write a Python program which can generate a network
 ## References
 
 > TODO: 
-> * Please add your references in the following  
+> * Please add your references in the following 
+* **MyReferences** 
+    * [Markdown介紹](https://bookdown.org/tpemartin/rmarkdown_intro/markdown-knitr.html#markdown-knitr)
+    * [iPerf指令](https://cms.35g.tw/coding/%E5%88%A9%E7%94%A8-iperf-%E6%B8%AC%E8%A9%A6%E7%B6%B2%E8%B7%AF%E6%95%88%E8%83%BD/)
 
 * **Mininet**
     * [Mininet Walkthrough](http://mininet.org/walkthrough/)
@@ -146,7 +149,7 @@ In this lab, we are going to write a Python program which can generate a network
     * [Cheat Sheet of Markdown Syntax](https://www.markdownguide.org/cheat-sheet)
     * [Vim Tutorial – Tutorialspoint](https://www.tutorialspoint.com/vim/index.htm)
     * [鳥哥的 Linux 私房菜 – 第九章、vim 程式編輯器](http://linux.vbird.org/linux_basic/0310vi.php)
-    * [Markdown介紹](https://bookdown.org/tpemartin/rmarkdown_intro/markdown-knitr.html#markdown-knitr)
+    
 ---
 ## Contributors
 
