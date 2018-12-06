@@ -106,7 +106,8 @@ In this lab, we are going to write a Python program which can generate a network
 	
 
 3. **Topology Generator**
-	1.  View the topology picture I'm going to generate (topo2.png)    
+	1.  View the topology picture I'm going to generate (topo2.png)  
+	![](/src/topo/topo2.png)
 	2.  Write a python program (topology.py) to generate a network topology for Mininet    
 		1.  Define a function build in the class MyTopo `def build(self):`  
 		2.  Create hosts and switches `.addSwitch() .addHost()`  
